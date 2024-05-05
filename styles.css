@@ -1,0 +1,228 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #e38c8c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Specific button styles */
+.create-button {
+    background-color: #28a745;
+    /* Green color */
+}
+
+.crud-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.crud-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.crud-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.crud-section .button {
+    display: inline-block;
+    background-color: #dc3545;
+    /* Default button color */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.crud-section .button:hover {
+    background-color: #c82333;
+    /* Button color on hover */
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    /* Initially hidden */
+    font-size: 0.85em;
+    margin-top: 5px;
+    /* Spacing for better visibility */
+}
+
+/* Responsive Design */
+
+/* Mobile: 767px and smaller */
+@media (max-width: 767px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .form-grid {
+        flex-direction: column;
+    }
+
+    .input-group {
+        margin-right: 0;
+    }
+}
+
+/* Tablet: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Add more padding to main */
+    main {
+        padding: 30px;
+    }
+}
+
+/* Desktop: 992px and larger */
+@media (min-width: 992px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    /* Increase font size for headers */
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
